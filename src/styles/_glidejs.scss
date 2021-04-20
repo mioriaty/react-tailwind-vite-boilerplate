@@ -1,0 +1,37 @@
+.glide-fade {
+  .glide__slides {
+    transform: none !important;
+    width: auto !important;
+    display: block;
+  }
+  .glide__slide {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    // transition: opacity 1000ms;
+  }
+  .glide__slide:first-child {
+    position: relative;
+  }
+  .ttnc-glide-active-reset {
+    opacity: 0;
+    // translate-x-20
+  }
+  .glide__slide--active {
+    z-index: 1;
+    opacity: 1;
+    .ttnc-glide-active-reset {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+  }
+}
+//
+
+.ttnc-HomePage3 .ttnc-SectionTopProduct .glide__bullet--active {
+  background: none;
+  span.w-11.border-b.border-gray-800 {
+    display: block;
+  }
+}

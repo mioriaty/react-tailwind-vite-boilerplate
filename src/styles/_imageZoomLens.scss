@@ -1,0 +1,24 @@
+.img-zoom-container {
+  position: relative;
+
+  &:hover {
+    img {
+      opacity: 0;
+    }
+  }
+
+  img {
+    z-index: 10;
+  }
+}
+
+.img-zoom-lens {
+  @apply absolute;
+  width: 40%;
+  height: 40%;
+}
+
+.img-zoom-result {
+  @apply absolute inset-0;
+  z-index: -1;
+}

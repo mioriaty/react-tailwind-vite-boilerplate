@@ -1,0 +1,27 @@
+body {
+  .dark {
+    .noUi-horizontal .noUi-handle {
+      background: white !important;
+    }
+  }
+  .noUi-horizontal {
+    height: 2px;
+    @apply bg-gray-800 dark:bg-gray-200;
+    .noUi-handle {
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+      top: 50%;
+      transform: translateY(-50%);
+      @apply bg-gray-900 dark:bg-gray-100;
+
+      box-shadow: none;
+      border: none;
+
+      &::after,
+      &::before {
+        display: none;
+      }
+    }
+  }
+}

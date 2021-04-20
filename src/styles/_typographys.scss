@@ -1,0 +1,9 @@
+body {
+  @apply text-gray-900 dark:text-gray-100;
+}
+
+// ---> default show coltrol of input number
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  opacity: 1;
+}

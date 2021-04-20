@@ -1,0 +1,12 @@
+// Navigation
+// === Menu Navigation  === //
+.menu-item-has-children {
+  .sub-menu {
+    display: none;
+  }
+  &:hover {
+    > .sub-menu {
+      display: block;
+    }
+  }
+}
