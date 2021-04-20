@@ -1,5 +1,5 @@
 import { hydrate, render } from 'react-dom';
-import './index.css';
+import './styles/index.css';
 import './styles/index.scss';
 import React from 'react';
 import App from './App';
