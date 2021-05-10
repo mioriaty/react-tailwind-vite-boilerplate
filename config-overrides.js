@@ -5,11 +5,11 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const configuration = {
   jsOutput: {
     filename: 'static/js/[name].js',
-    chunkFilename: 'static/js/[name].chunk.js',
+    chunkFilename: 'static/js/[name].[contenthash:8].chunk.js',
   },
   cssOutput: {
     filename: 'static/css/[name].css',
-    chunkFilename: 'static/css/[name].chunk.css',
+    chunkFilename: 'static/css/[name].[contenthash:8].chunk.css',
   },
   vendor: {
     filename: 'static/js/vendors/vendor-[name].[contenthash:8].js',
